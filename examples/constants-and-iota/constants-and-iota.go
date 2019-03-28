@@ -25,15 +25,15 @@ const (
 	Spring = Season(iota)
 	Summer
 	Autumn
-	Winner
+	Winter
 )
 
 // output function for Season variable
 func (s Season) String() string {
-	name := []string{"spring", "summer", "autumn", "winner"}
+	name := []string{"spring", "summer", "autumn", "winter"}
 	i := uint8(s)
 	switch {
-	case i <= uint8(Winner):
+	case i <= uint8(Winter):
 		return name[i]
 	default:
 		return strconv.Itoa(int(i))

@@ -14,7 +14,7 @@
           <td class="docs">
             <p>Go supports <em>constants</em> of character, string, boolean,
 and numeric values.
-We can use <em>iota</em> to simulate C’s enum or #define constant.</p>
+We can use <em>iota</em> to simulate C&rsquo;s enum or #define constant.</p>
 
           </td>
           <td class="code empty leading">
@@ -28,8 +28,9 @@ We can use <em>iota</em> to simulate C’s enum or #define constant.</p>
             
           </td>
           <td class="code leading">
-	        <a href="http://play.golang.org/p/NyE38kC4q7"><img title="Run code" src="play.png" class="run" /></a>
-            <div class="highlight"><pre><span class="kn">package</span> <span class="nx">main</span>
+	        <a href="http://play.golang.org/p/Requires POST
+"><img title="Run code" src="play.png" class="run" /></a>
+            <div class="highlight"><pre><span></span><span class="kn">package</span> <span class="nx">main</span>
 </pre></div>
 
           </td>
@@ -41,7 +42,7 @@ We can use <em>iota</em> to simulate C’s enum or #define constant.</p>
           </td>
           <td class="code leading">
 	        
-            <div class="highlight"><pre><span class="kn">import</span> <span class="p">(</span>
+            <div class="highlight"><pre><span></span><span class="kn">import</span> <span class="p">(</span>
 	<span class="s">&quot;fmt&quot;</span>
 	<span class="s">&quot;strconv&quot;</span>
 <span class="p">)</span>
@@ -58,7 +59,7 @@ We can use <em>iota</em> to simulate C’s enum or #define constant.</p>
           </td>
           <td class="code leading">
 	        
-            <div class="highlight"><pre><span class="kd">const</span> <span class="nx">s</span> <span class="kt">string</span> <span class="p">=</span> <span class="s">&quot;constant&quot;</span>
+            <div class="highlight"><pre><span></span><span class="kd">const</span> <span class="nx">s</span> <span class="kt">string</span> <span class="p">=</span> <span class="s">&quot;constant&quot;</span>
 </pre></div>
 
           </td>
@@ -72,7 +73,7 @@ Ref: <a href="http://blog.golang.org/constants">http://blog.golang.org/constants
           </td>
           <td class="code leading">
 	        
-            <div class="highlight"><pre><span class="kd">const</span> <span class="nx">MaxUint</span> <span class="p">=</span> <span class="p">^</span><span class="nb">uint</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+            <div class="highlight"><pre><span></span><span class="kd">const</span> <span class="nx">MaxUint</span> <span class="p">=</span> <span class="p">^</span><span class="nb">uint</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
 <span class="kd">const</span> <span class="nx">MaxUint32</span> <span class="p">=</span> <span class="p">^</span><span class="nb">uint32</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
 </pre></div>
 
@@ -81,12 +82,12 @@ Ref: <a href="http://blog.golang.org/constants">http://blog.golang.org/constants
         
         <tr>
           <td class="docs">
-            <p>Here we simulate C’s <code>enum</code> by Go’s <code>iota</code></p>
+            <p>Here we simulate C&rsquo;s <code>enum</code> by Go&rsquo;s <code>iota</code></p>
 
           </td>
           <td class="code leading">
 	        
-            <div class="highlight"><pre><span class="kd">type</span> <span class="nx">Season</span> <span class="kt">uint8</span>
+            <div class="highlight"><pre><span></span><span class="kd">type</span> <span class="nx">Season</span> <span class="kt">uint8</span>
 </pre></div>
 
           </td>
@@ -98,11 +99,11 @@ Ref: <a href="http://blog.golang.org/constants">http://blog.golang.org/constants
           </td>
           <td class="code leading">
 	        
-            <div class="highlight"><pre><span class="kd">const</span> <span class="p">(</span>
+            <div class="highlight"><pre><span></span><span class="kd">const</span> <span class="p">(</span>
 	<span class="nx">Spring</span> <span class="p">=</span> <span class="nx">Season</span><span class="p">(</span><span class="kc">iota</span><span class="p">)</span>
 	<span class="nx">Summer</span>
 	<span class="nx">Autumn</span>
-	<span class="nx">Winner</span>
+	<span class="nx">Winter</span>
 <span class="p">)</span>
 </pre></div>
 
@@ -116,11 +117,11 @@ Ref: <a href="http://blog.golang.org/constants">http://blog.golang.org/constants
           </td>
           <td class="code leading">
 	        
-            <div class="highlight"><pre><span class="kd">func</span> <span class="p">(</span><span class="nx">s</span> <span class="nx">Season</span><span class="p">)</span> <span class="nx">String</span><span class="p">()</span> <span class="kt">string</span> <span class="p">{</span>
-	<span class="nx">name</span> <span class="o">:=</span> <span class="p">[]</span><span class="kt">string</span><span class="p">{</span><span class="s">&quot;spring&quot;</span><span class="p">,</span> <span class="s">&quot;summer&quot;</span><span class="p">,</span> <span class="s">&quot;autumn&quot;</span><span class="p">,</span> <span class="s">&quot;winner&quot;</span><span class="p">}</span>
+            <div class="highlight"><pre><span></span><span class="kd">func</span> <span class="p">(</span><span class="nx">s</span> <span class="nx">Season</span><span class="p">)</span> <span class="nx">String</span><span class="p">()</span> <span class="kt">string</span> <span class="p">{</span>
+	<span class="nx">name</span> <span class="o">:=</span> <span class="p">[]</span><span class="kt">string</span><span class="p">{</span><span class="s">&quot;spring&quot;</span><span class="p">,</span> <span class="s">&quot;summer&quot;</span><span class="p">,</span> <span class="s">&quot;autumn&quot;</span><span class="p">,</span> <span class="s">&quot;winter&quot;</span><span class="p">}</span>
 	<span class="nx">i</span> <span class="o">:=</span> <span class="nb">uint8</span><span class="p">(</span><span class="nx">s</span><span class="p">)</span>
 	<span class="k">switch</span> <span class="p">{</span>
-	<span class="k">case</span> <span class="nx">i</span> <span class="o">&lt;=</span> <span class="nb">uint8</span><span class="p">(</span><span class="nx">Winner</span><span class="p">):</span>
+	<span class="k">case</span> <span class="nx">i</span> <span class="o">&lt;=</span> <span class="nb">uint8</span><span class="p">(</span><span class="nx">Winter</span><span class="p">):</span>
 		<span class="k">return</span> <span class="nx">name</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span>
 	<span class="k">default</span><span class="p">:</span>
 		<span class="k">return</span> <span class="nx">strconv</span><span class="p">.</span><span class="nx">Itoa</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="nx">i</span><span class="p">))</span>
@@ -141,7 +142,7 @@ statement can.</p>
           </td>
           <td class="code leading">
 	        
-            <div class="highlight"><pre>	<span class="kd">const</span> <span class="nx">n</span> <span class="p">=</span> <span class="mi">500000000</span>
+            <div class="highlight"><pre><span></span>	<span class="kd">const</span> <span class="nx">n</span> <span class="p">=</span> <span class="mi">500000000</span>
 </pre></div>
 
           </td>
@@ -155,7 +156,7 @@ arbitrary precision.</p>
           </td>
           <td class="code leading">
 	        
-            <div class="highlight"><pre>	<span class="kd">const</span> <span class="nx">d</span> <span class="p">=</span> <span class="mf">3e20</span> <span class="o">/</span> <span class="nx">n</span>
+            <div class="highlight"><pre><span></span>	<span class="kd">const</span> <span class="nx">d</span> <span class="p">=</span> <span class="mf">3e20</span> <span class="o">/</span> <span class="nx">n</span>
 	<span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="nx">d</span><span class="p">)</span>
 </pre></div>
 
@@ -164,13 +165,13 @@ arbitrary precision.</p>
         
         <tr>
           <td class="docs">
-            <p>A numeric constant has no type until it’s given
+            <p>A numeric constant has no type until it&rsquo;s given
 one, such as by an explicit cast.</p>
 
           </td>
           <td class="code leading">
 	        
-            <div class="highlight"><pre>	<span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="nb">int64</span><span class="p">(</span><span class="nx">d</span><span class="p">))</span>
+            <div class="highlight"><pre><span></span>	<span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="nb">int64</span><span class="p">(</span><span class="nx">d</span><span class="p">))</span>
 </pre></div>
 
           </td>
@@ -186,7 +187,7 @@ assignment or function call. For example, here
           </td>
           <td class="code leading">
 	        
-            <div class="highlight"><pre>	<span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="nx">math</span><span class="p">.</span><span class="nx">Sin</span><span class="p">(</span><span class="nx">n</span><span class="p">))</span>
+            <div class="highlight"><pre><span></span>	<span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="nx">math</span><span class="p">.</span><span class="nx">Sin</span><span class="p">(</span><span class="nx">n</span><span class="p">))</span>
 </pre></div>
 
           </td>
@@ -199,7 +200,7 @@ assignment or function call. For example, here
           </td>
           <td class="code leading">
 	        
-            <div class="highlight"><pre>	<span class="nx">s</span> <span class="o">:=</span> <span class="nx">Summer</span>
+            <div class="highlight"><pre><span></span>	<span class="nx">s</span> <span class="o">:=</span> <span class="nx">Summer</span>
 	<span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="nx">s</span><span class="p">)</span>
 </pre></div>
 
@@ -213,7 +214,7 @@ assignment or function call. For example, here
           </td>
           <td class="code leading">
 	        
-            <div class="highlight"><pre>	<span class="nx">s</span> <span class="p">=</span> <span class="nx">Season</span><span class="p">(</span><span class="mi">9</span><span class="p">)</span>
+            <div class="highlight"><pre><span></span>	<span class="nx">s</span> <span class="p">=</span> <span class="nx">Season</span><span class="p">(</span><span class="mi">9</span><span class="p">)</span>
 	<span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="nx">s</span><span class="p">)</span>
 </pre></div>
 
@@ -226,7 +227,7 @@ assignment or function call. For example, here
           </td>
           <td class="code">
 	        
-            <div class="highlight"><pre>	<span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="nx">MaxUint</span><span class="p">)</span>
+            <div class="highlight"><pre><span></span>	<span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="nx">MaxUint</span><span class="p">)</span>
 	<span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="nx">MaxUint32</span><span class="p">)</span>
 <span class="p">}</span>
 </pre></div>
@@ -244,7 +245,7 @@ assignment or function call. For example, here
           </td>
           <td class="code">
 	        
-            <div class="highlight"><pre><span class="gp">$</span> go run constant.go
+            <div class="highlight"><pre><span></span><span class="gp">$</span> go run constant.go
 <span class="go">constant</span>
 <span class="go">6e+11</span>
 <span class="go">600000000000</span>
